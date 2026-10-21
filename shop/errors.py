@@ -11,3 +11,7 @@ class UnknownProduct(ShopError):
 
 class OutOfStock(ShopError):
     """Not enough units in stock."""
+
+
+class InvalidDiscountCode(ShopError):
+    """The discount code does not exist."""
