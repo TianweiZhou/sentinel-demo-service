@@ -16,6 +16,6 @@ jobs:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0          # Sentinel diffs the PR against its base
-      - uses: TianweiZhou/sentinel-ai-code-gate@pr-reviewer   # switch to @v2 once released
+      - uses: TianweiZhou/sentinel-ai-code-gate@v2
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}   # optional: enables the AI reviewer
